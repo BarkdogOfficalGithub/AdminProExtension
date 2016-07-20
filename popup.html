@@ -1,15 +1,40 @@
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
 
 <!-- Linked Buttons -->
-
-<img src="pagetop.png" alt="" usemap="#Map" />
-<map name="Map" id="Map">
-    <area alt="" title="" href="#" shape="rect" coords="1,20" />
-    <area alt="Player List" title="" href="playerlist.html" shape="poly" coords="5,1,5,38,177,38,176,0" />
-    <area alt="Forum" title="" target="_blank" href="http://totalfreedom.boards.net" shape="poly" coords="189,0,189,38,361,37,359,0" />
-    <area alt="Permban List" title="" href="permbans.html" shape="poly" coords="378,37,378,2,549,0,548,38" />
-    <area alt="" title="" href="CanYouFind.html" shape="rect" coords="738,5,739,36" />
-</map>
+<ul>
+  <li><a class="active" href="#">Home</a></li>
+  <li><a href="playerlist.html">Player list</a></li>
+  <li><a href="permbans.html">Permaban list</a></li>
+  <li><a href="https://github.com/jjkatz/AdminProExtention">GitHub</a></li>
+</ul>
 
 
 </map>
