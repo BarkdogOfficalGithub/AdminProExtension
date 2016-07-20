@@ -1,7 +1,43 @@
-<!-- Back Button -->
-<form method="get" action="popup.html">
-    <button type="submit">Back</button>
-</form>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+
+<!-- Linked Buttons -->
+<ul>
+  <li><a href="popup.html">Home</a></li>
+  <li><a href="playerlist.html">Player List</a></li>
+  <li><a class="active" href="permbans.html">Permban List</a></li>
+  <li><a href="https://github.com/TotalFreedom" target="_blank" >Github</a></li>
+  <li><a href="http://totalfreedom.me/" target="_blank" >Website</a></li>
+  <li><a href="http://totalfreedom.boards.net/" target="_blank" >Forums</a></li>
+  <li><a href="http://minecraft-mp.com/server/51582/vote/" target="_blank" >Vote</a></li>
+</ul>
 
 <!-- iFrame of Permban List -->
 <iframe src="http://play.totalfreedom.me:28966/permbans" width="750" height="520" scrolling="yes"></iframe>
